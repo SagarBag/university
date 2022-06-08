@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function onload() {
+        let na = prompt("Enter your name here", "");
+        document.getElementById("name").innerHTML = "Dear "+na+" you have got ";
+    }
+
+
+    function mcq() {
+
+        let count = 0;
+        let qs1 = document.getElementById("q1").value;
+        let qs2 = document.getElementById("q2").value;
+        let qs3 = document.getElementById("q3").value;
+        let qs4 = document.getElementById("q4").value;
+        let qs5 = document.getElementById("q5").value;
+        let qs6 = document.getElementById("q6").value;
+        let qs7 = document.getElementById("q7").value;
+        let qs8 = document.getElementById("q8").value;
+        let qs9 = document.getElementById("q9").value;
+        let qs10 = document.getElementById("q10").value;
+        if (qs1 == "1d") {
+            count++;
+            document.getElementById("res1").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res1").innerHTML = "incorrect";
+        }
+
+        if (qs2 == "2b") {
+            count++;
+            document.getElementById("res2").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res2").innerHTML = "incorrect";
+        }
+
+        if (qs3 == "3c") {
+            count++;
+            document.getElementById("res3").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res3").innerHTML = "incorrect";
+        }
+
+        if (qs4 == "4a") {
+            count++;
+            document.getElementById("res4").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res4").innerHTML = "incorrect";
+        }
+
+        if (qs5 == "5d") {
+            count++;
+            document.getElementById("res5").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res5").innerHTML = "incorrect";
+        }
+
+        if (qs6 == "6c") {
+            count++;
+            document.getElementById("res6").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res6").innerHTML = "incorrect";
+        }
+
+        if (qs7 == "7d") {
+            count++;
+            document.getElementById("res7").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res7").innerHTML = "incorrect";
+        }
+
+        if (qs8 == "8a") {
+            count++;
+            document.getElementById("res8").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res8").innerHTML = "incorrect";
+        }
+
+        if (qs9 == "9a") {
+            count++;
+            document.getElementById("res9").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res9").innerHTML = "incorrect";
+        }
+
+        if (qs10 == "10d") {
+            count++;
+            document.getElementById("res10").innerHTML = "correct";
+        }
+        else {
+            document.getElementById("res10").innerHTML = "incorrect";
+        }
+
+
+        // document.getElementById("result").innerHTML = count;
+        document.getElementById("result").innerHTML = count + " out of 10";
+    }
+</script>
+
+<body onload="onload()">
+    <center>
+    <form action="">
+        <center><h1> <u>Answer the queations carefully!</u> </h1></center>
+        <center><h3>(Click on Submit After Completion)</h3></center>
+        <table id="questions">
+            <tr>
+                <td>1. WHAT IS THE COLOR OF AN APPLE : </td>
+                <td> <SELECT id="q1">
+                        <option selected hidden>select your answer</option>
+                        <option value="1a">BLUE</option>
+                        <option value="1b">ORANGR</option>
+                        <option value="1c">BLACK</option>
+                        <option value="1d">RED</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res1"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td> 2. WHAT IS THE COLOR OF HUMAN HAIR : </td>
+                <td> <SELECT id="q2">
+                        <option selected hidden>select your answer</option>
+                        <option value="2a">BLUE</option>
+                        <option value="2b">BLACK</option>
+                        <option value="2c">RED</option>
+                        <option value="2d">GREEN</option>
+                    </SELECT></td>
+                <td> </td>
+                <td>
+                    <h2 id="res2"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td> 3. WHAT IS THE TOTAL NUMBER OF ALPHABATES : </td>
+                <td> <SELECT id="q3">
+                        <option selected hidden>select your answer</option>
+                        <option value="3a">20</option>
+                        <option value="3b">22</option>
+                        <option value="3c">26</option>
+                        <option value="3d">30</option>
+                    </SELECT></td>
+                <td> </td>
+                <td>
+                    <h2 id="res3"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td> 4. WHICH ONE IS THE HOTTEST : </td>
+                <td><SELECT id="q4">
+                        <option selected hidden>select your answer</option>
+                        <option value="4a">SUN</option>
+                        <option value="4b">MOON</option>
+                        <option value="4c">PLUTO</option>
+                        <option value="4d">EARTH</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res4"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>5. WHICH ONE IS COLDEST : </td>
+                <td><SELECT id="q5">
+                        <option selected hidden>select your answer</option>
+                        <option value="5a">ICE</option>
+                        <option value="5b">LIQUID NO<sub>2</sub></option>
+                        <option value="5c">OXYGEN</option>
+                        <option value="5d">PLUTO</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res5"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>6. HOW MANY FINGERS DO U HAVE? : </td>
+                <td><SELECT id="q6">
+                        <option selected hidden>select your answer</option>
+                        <option value="6a">10</option>
+                        <option value="6b">5</option>
+                        <option value="6c">20</option>
+                        <option value="6d">NONE</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res6"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7. WHAT IS THE VALUE OF 2+10 : </td>
+                <td><SELECT id="q7">
+                        <option selected hidden>select your answer</option>
+                        <option value="7a">10</option>
+                        <option value="7b">20</option>
+                        <option value="7c">11</option>
+                        <option value="7d">12</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res7"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td> 8. WHAT IS THE VALUE OF 2*10 : </td>
+                <td> <SELECT id="q8">
+                        <option selected hidden>select your answer</option>
+                        <option value="8a">20</option>
+                        <option value="8b">30</option>
+                        <option value="8c">50</option>
+                        <option value="8d">NONE</option>
+                    </SELECT></td>
+                <td>&nbsp; &nbsp;</td>
+                <td>
+                    <h2 id="res8"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td> 9. WHO IS SACHIN? : </td>
+                <td><SELECT id="q9">
+                        <option selected hidden>select your answer</option>
+                        <option value="9a">A MAN</option>
+                        <option value="9b">A CRICKETER</option>
+                        <option value="9c">A FOOTBALLER</option>
+                        <option value="9d">A WOMAN</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res9"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>10. WHO WROTE THE NATIONAL ANTHEM OF INDIA : </td>
+                <td> <SELECT id="q10">
+                        <option selected hidden>select your answer</option>
+                        <option value="10a">GANDHI</option>
+                        <option value="10b">NETAJI</option>
+                        <option value="10c">AMBETKAR</option>
+                        <option value="10d">RABINDRA NATH</option>
+                    </SELECT></td>
+                <td></td>
+                <td>
+                    <h2 id="res10" class="reset"></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+        </table>
+        <br><br>
+
+        <input type="button" value="Submit" onclick="mcq()">
+        <input type="button" value="Refresh" onclick="window.location.reload()">
+    </form>
+    <br><br>
+    <hr>
+    <h3>Marks Obtained (see below):-</h3>
+   
+    
+    
+</center>
+<table id="status" width="100%">
+    <tr align="center">
+        <td><h4 id="name"></h4></td>
+        <td><h4 id="result"></h4></td>
+    </tr>
+</table>
+</body>
+
+</html>

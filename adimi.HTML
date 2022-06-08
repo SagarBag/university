@@ -1,0 +1,238 @@
+<html>
+<head>
+<style>
+
+
+header{
+display: flex;
+background-color: #931c1c;
+color: white;
+position: sticky;
+display: top;
+}
+
+header nav{
+diplay: flex;
+}
+
+legend{
+align: center;
+}
+
+footer{
+color: white;
+diplay: bottomt;
+position: sticky;
+}
+
+nav{
+display: flex;
+align-items: center;
+}
+
+header nav ul{
+display: flex;
+list-style: none;
+text-decoration: none;
+}
+
+.logo{
+padding: 0px 7px;
+
+}
+header nav ul li{
+padding: 10px;
+text-decoration: none;
+transition: .5s;
+}
+
+legend{
+text-align: center;
+}
+
+fieldset{
+background-color: #d6de96;
+}
+
+header nav ul li:hover{
+color: #4eff00;
+font-weight: BOLDER;
+transition: .5s;
+cursor: pointer;
+}
+
+.body{
+height: 70vh;
+}
+
+hr{
+width: 50vw;
+align: center;
+}
+
+.btn{
+transition: .5s;
+
+}
+.btn:hover{
+cursor: pointer;
+background-color: #6ec447;
+transition: .5s;
+}
+
+.btn2{
+transition: .5s;
+}
+.btn2:hover{
+cursor: pointer;
+background-color: #d05959;
+transition: .5s;
+}
+
+#ma2{
+color: blue;
+}
+#ma1{
+color: white;
+font-size: 25px;
+}
+
+</style>
+</head>
+<body bgcolor="c9c9c9">
+
+<center><h1>APPLICATION FORM</h1></center>
+<hr>
+<marquee behavior="scroll" bgcolor="96aee3" SIZE="5" id="ma2"><b>--Please Fill The All Fields Below--<b></MARQUEE>
+
+<div class="body">
+
+<center>
+<fieldset>
+<legend><h3>PLEASE FILL ALL THE FIELDS</h3></LEGEND>
+<form>
+<table aligt="center" >
+
+<tr >
+<td>STUDENT'S NAME:</td>
+<td><input type=text name=text1 size=30 PLACEHOLDER="--ENTER YOUR NAME--" id="n1"><td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>PASSWORD:</td>
+<td><input type=password name=pass size=30 PLACEHOLDER="--ENTER PASSWORD--"></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>ADDRESS:</td>
+<td><textarea rows=5 cols=50 PLACEHOLDER="--ENTER YOUR ADDRESS--"></textarea></td>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>GENDER:</td>
+<td><label for="male"><input type="radio" name="gender" id="male">Male
+</label></td></tr>
+<tr >
+<td></td>
+<td><label for="female"><input type="radio" name="gender" id="female">FeMale
+</label></td></tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>
+QUALIFICATION:
+</td>
+
+<td>
+<label id="madh">
+<input type=checkbox name=quali>MADHYAMIK
+</label>
+<label id="hs">
+<input type=checkbox name=quali id="hs">H.S
+</label>
+<label id="gd">
+<input type=checkbox name=quali id="gd">GRADUATE
+</label>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>CITY:</td>
+<td><select name=city>
+<option value=KOL>Kolkata</OPTION>
+<option value=DEL>Delhi</OPTION>
+<option value=MUM>Mumbai</OPTION>
+<option value=CHEN>Chennai</OPTION>
+</select></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>STATE:</td>
+<td><select name="STATE">
+<option>West Bengal</OPTION>
+<option>Bihar</OPTION>
+</select></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>UPLOAD YOUR PHOTO:</td>
+<td><input type="file" name="file1" size=40 value="RKMSCC"></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr >
+<td>UPLOAD YOUR SIGNATURE:</td>
+<td><input type="file" name="file1" size=40 value="RKMSCC"></td>
+</tr>
+</table>
+
+<br><br>
+
+<center>
+<input type=submit name=button1 value="Submit" class="btn" onclick='alert(n1.value+" your record have been submitted succesfully...!")'>
+<input type=reset name=button2 value="Refresh" class="btn2">
+</center>
+</form>
+</fieldset>
+</center>
+</div>
+</body>
+</html>
+</html>
